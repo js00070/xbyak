@@ -1814,7 +1814,7 @@ public:
 		const int *const calleeTbl = fullTbl + noSaveNum;
 		int callerUseNum = 0;
 		int calleeUseNum = 0;
-		for (int i = 0; i < 15; i++) {
+		for (int i = 0; i < maxRegNum; i++) {
 			if (useRegs_ & useFlagOf(fullTbl[i])) {
 				if (i < noSaveNum) {
 					callerUseNum++;
